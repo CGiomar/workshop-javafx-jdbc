@@ -91,7 +91,7 @@ public class DepartmentFromController implements Initializable{
 		
 		obj.setId(utils.tryParseToInt(txtId.getText()));
 		
-		if(txtName.getText()==null || txtName.getAccessibleText().trim().equals("")){
+		if(txtName.getText()==null || txtName.getText().trim().equals("")){
 			exception.addError("name", "Field can't be empty");
 		}
 		obj.setName(txtName.getText());
